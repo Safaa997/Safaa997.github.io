@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How I Learned Computational Neuroscience — Safaa Mamoun</title>
+  <meta name="description" content="Safaa Mamoun's route from biology into mathematics, code, machine learning, and computational neuroscience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar article-sidebar">
+      <div class="portrait-wrap"><img class="portrait" src="../assets/profile.jpg" alt="Safaa Mamoun"></div>
+      <div class="identity"><p class="eyebrow">Essay</p><h1>Safaa<br>Mamoun</h1><p class="role">Behaviour · Computation<br>Neural data</p></div>
+      <nav aria-label="Essay navigation"><a href="#beginning">The beginning</a><a href="#mathematics">Mathematics</a><a href="#code">Programming</a><a href="#machine-learning">Machine learning</a><a href="#neuroscience">Neuroscience</a><a href="#resources">Resources</a></nav>
+      <div class="sidebar-footer"><a class="back-link" href="../">← Back to portfolio</a><a class="cv-button" href="../assets/Safaa-Mamoun-CV.pdf" target="_blank">Download CV <span aria-hidden="true">↗</span></a><p>© 2026 Safaa Mamoun</p></div>
+    </aside>
+
+    <article class="article-shell">
+      <header class="article-hero">
+        <p class="kicker">Learning path · August 2026</p>
+        <h2>How I Learned Computational Neuroscience</h2>
+        <p class="article-deck">I did not enter neuroscience through mathematics or computer science. I came through biology — then learned to use equations, code, and models as tools for asking better biological questions.</p>
+        <p class="article-meta">By Safaa Mamoun · 10 min read</p>
+      </header>
+
+      <div class="article-body">
+        <h3 id="beginning">I started with organisms, not algorithms</h3>
+        <p>My academic training began in zoology, followed by genetics and molecular biology. I was comfortable thinking about organisms, cells, experiments, and biological variability. Computation was not yet the centre of how I worked. That changed during my PhD in neurobiology at SISSA, when I began studying how social isolation affects anxiety, social behaviour, and neural plasticity across the zebrafish lifespan.</p>
+        <p>Behavioural experiments produce rich data, but summary measures can flatten that richness. I wanted to understand not only whether an animal moved more or less, but how behaviour was organized over time, how states transitioned, and whether the structure of those transitions changed with age or isolation. Those questions pushed me toward computational neuroscience.</p>
+
+        <h3 id="mathematics">First, I rebuilt the mathematics</h3>
+        <p>My first obstacle was not intelligence; it was mathematical language. Linear algebra, calculus, probability, and dynamical systems often appeared as compressed notation without enough intuition. I learned better when I could first see what an equation was doing geometrically, then return to the formalism.</p>
+        <p>The complete 3Blue1Brown series <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank">Essence of Linear Algebra</a> and <a href="https://www.youtube.com/playlist?list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x" target="_blank">Essence of Calculus</a> gave me that visual foundation. I complemented them with structured mathematics-for-machine-learning courses and Steven Strogatz’s <em>Nonlinear Dynamics and Chaos</em>. The goal was not to collect formulas. It was to recognize the mathematical shape of a biological problem.</p>
+        <p class="article-pullquote">I stopped treating mathematics as a gatekeeper and started treating it as a language I could learn one useful sentence at a time.</p>
+
+        <h3 id="code">Programming became a way of thinking</h3>
+        <p>I learned Python and R by using them on real data. Small exercises helped, but progress accelerated when the code had a scientific purpose: cleaning tracking output, organizing experiments, visualizing behaviour, comparing groups, and testing whether an analysis was robust to different definitions.</p>
+        <p>Working through data-analysis material, including Pandas-focused training, taught me to make the path from raw data to result explicit and reproducible. In my PhD work, that path grew into pipelines built around DeepLabCut pose estimation, custom Python analysis, and later Keypoint-MoSeq for unsupervised behavioural segmentation.</p>
+
+        <h3 id="machine-learning">Machine learning connected tools to questions</h3>
+        <p>Machine learning initially looked like a large catalogue of algorithms. It became manageable when I organized it around a few questions: What is the representation? What information is being preserved or discarded? What is the model trying to predict? How will I know whether it generalizes?</p>
+        <p>Coursera specializations in machine learning and mathematics for machine learning strengthened that foundation. I then applied the ideas to problems close to my research: supervised models of animal state, latent-factor approaches, dimensionality reduction, and unsupervised descriptions of behavioural structure. This was where methods stopped feeling separate from neuroscience.</p>
+
+        <h3 id="neuroscience">Then I integrated computation with neuroscience</h3>
+        <p>Open computational-neuroscience curricula helped me connect the pieces. The <a href="https://compneuro.neuromatch.io/" target="_blank">Neuromatch computational neuroscience coursebook</a> provided a broad, hands-on route through models, machine learning, dynamical systems, stochastic processes, and causality. The <a href="https://bernstein-network.de/en/teaching-and-research/study-and-training/online-learning/" target="_blank">Bernstein Network’s online learning resources</a> offered lecture-based depth and another way to revisit difficult topics.</p>
+        <p>The decisive step was the Cajal Advanced Computational Neuroscience Summer School in 2024. Intensive teaching and project work forced me to move between concepts, code, data, and interpretation. In our project on dimensionality reduction of neuronal codes in auditory cortex, computational analysis was not an accessory to the neuroscience; it was the means by which the scientific question became testable.</p>
+        <p>Back in my doctoral research, I began examining behavioural organization using entropy, transition matrices, Markov-chain models, factor analysis, and machine learning. Each method gave me a different view of the same animals: not just how much they moved, but how flexible, predictable, or constrained their behaviour was.</p>
+
+        <h3>What I would tell another biologist</h3>
+        <p>You do not need to become a theoretical physicist before you are allowed to ask computational questions. You need enough mathematics to understand your model, enough programming to examine your data honestly, and enough neuroscience to know when an elegant result is biologically meaningless.</p>
+        <p>My route was not linear. I repeatedly returned to fundamentals, learned a technique when a real problem demanded it, and then revisited the theory with better questions. That loop — foundation, application, confusion, return — is still how I learn.</p>
+
+        <h3 id="resources">The resources that shaped my route</h3>
+        <ul class="resource-list">
+          <li><strong>Mathematical intuition</strong><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank">3Blue1Brown — Essence of Linear Algebra, complete series ↗</a></li>
+          <li><strong>Calculus</strong><a href="https://www.youtube.com/playlist?list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x" target="_blank">3Blue1Brown — Essence of Calculus, complete series ↗</a></li>
+          <li><strong>Dynamical systems</strong>Steven Strogatz — <em>Nonlinear Dynamics and Chaos</em></li>
+          <li><strong>Programming and data analysis</strong>Python, R, and Pandas practice built around real datasets</li>
+          <li><strong>Machine learning</strong>Coursera Machine Learning and Mathematics for Machine Learning specializations</li>
+          <li><strong>Computational neuroscience</strong><a href="https://compneuro.neuromatch.io/" target="_blank">Neuromatch Academy open coursebook ↗</a></li>
+          <li><strong>Lecture series</strong><a href="https://bernstein-network.de/en/teaching-and-research/study-and-training/online-learning/" target="_blank">Bernstein Network online learning ↗</a></li>
+          <li><strong>Immersive training</strong>Cajal Advanced Computational Neuroscience Summer School, 2024</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
