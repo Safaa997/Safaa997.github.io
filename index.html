@@ -1,57 +1,545 @@
-<style>
-  .portrait-wrap {
-    width: 160px;
-    height: 160px;
-    overflow: hidden;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  .portrait {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-  }
+  <title>Safaa Mamoun — Neuroscientist</title>
 
-  .beyond-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
-    gap: clamp(28px, 5vw, 72px);
-    align-items: end;
-  }
+  <meta
+    name="description"
+    content="Safaa Mamoun is a neuroscientist integrating behaviour, computation, and neural data."
+  >
 
-  .beyond-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 750px;
-    object-fit: cover;
-    object-position: center;
-  }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  .beyond-copy {
-    padding: 28px 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet"
+  >
 
-  .beyond-copy p {
-    margin: 0;
-    color: var(--muted);
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: clamp(24px, 2.4vw, 34px);
-    line-height: 1.38;
-  }
+  <link rel="stylesheet" href="styles.css">
 
-  @media (max-width: 680px) {
+  <style>
+    body .portrait-wrap {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      overflow: hidden;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    body .portrait {
+      position: static;
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      left: auto;
+      top: auto;
+      object-fit: cover;
+      object-position: center 30%;
+      transform: none;
+    }
+
     .beyond-grid {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.75fr);
+      gap: clamp(28px, 5vw, 72px);
+      align-items: end;
+    }
+
+    .beyond-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .beyond-figure {
+      margin: 0;
+    }
+
+    .beyond-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .beyond-figure figcaption {
+      margin-top: 9px;
+      color: var(--muted, #686a65);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .beyond-copy {
-      padding: 24px 0;
+      padding: 28px 0;
+      border-top: 1px solid var(--line, #d8d6cf);
+      border-bottom: 1px solid var(--line, #d8d6cf);
     }
-  }
-</style>
+
+    .beyond-copy p {
+      margin: 0;
+      color: var(--muted, #686a65);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(24px, 2.4vw, 34px);
+      line-height: 1.38;
+    }
+
+    @media (max-width: 680px) {
+      body .portrait-wrap {
+        width: 90px;
+        height: 90px;
+      }
+
+      .beyond-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .beyond-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .beyond-image {
+        aspect-ratio: 4 / 3;
+      }
+
+      .beyond-copy {
+        padding: 24px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar">
+      <div class="portrait-wrap">
+        <img
+          class="portrait"
+          src="assets/profile.jpg"
+          alt="Safaa Mamoun"
+        >
+      </div>
+
+      <div class="identity">
+        <p class="eyebrow">Neuroscientist</p>
+        <h1>Safaa<br>Mamoun</h1>
+        <p class="role">
+          Behaviour · Computation<br>
+          Neural data
+        </p>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#training">Training</a>
+        <a href="#beyond">Beyond the lab</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a
+          class="cv-button"
+          href="assets/Safaa-Mamoun-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV <span aria-hidden="true">↗</span>
+        </a>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/Safaa997"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a href="mailto:sabdelma@sissa.it">Email</a>
+        </div>
+
+        <p>© 2026 Safaa Mamoun</p>
+      </div>
+    </aside>
+
+    <div class="content">
+      <section id="about" class="hero section-block">
+        <p class="kicker">PhD Researcher · SISSA, Trieste</p>
+
+        <h2>
+          I study how experience shapes
+          <em>behaviour</em> across the lifespan.
+        </h2>
+
+        <p class="intro">
+          I integrate behavioural neuroscience, machine learning, and
+          computational modelling to investigate social behaviour, stress,
+          ageing, and the neural substrates of internal states.
+        </p>
+
+        <div class="focus-grid">
+          <div>
+            <span>01</span>
+            <h3>Behaviour</h3>
+            <p>
+              Quantifying natural behaviour from pose and movement dynamics.
+            </p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Computation</h3>
+            <p>
+              Finding structure with statistical models, entropy, and machine
+              learning.
+            </p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>Neural data</h3>
+            <p>
+              Connecting behavioural organization to neural plasticity and
+              circuitry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-block">
+        <div class="section-heading">
+          <p>Trajectory</p>
+          <h2>Experience &amp; education</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <p class="year">2022—present</p>
+
+            <div>
+              <h3>PhD Researcher in Neurobiology</h3>
+
+              <p class="institution">
+                International School for Advanced Studies (SISSA), Trieste
+              </p>
+
+              <p>
+                Investigating age-dependent effects of social isolation on
+                anxiety-related behaviour, social behaviour, and neural
+                plasticity in zebrafish. Designing computational pipelines for
+                pose estimation, unsupervised behavioural segmentation, factor
+                analysis, transition matrices, and Markov-chain modelling.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">Mar—Jun 2022</p>
+
+            <div>
+              <h3>Visiting Researcher · Cognitive Neuroscience</h3>
+              <p class="institution">SISSA, Trieste</p>
+
+              <p>
+                Worked on an incidental learning research project under the
+                supervision of Prof. Alessandro Treves.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2019—2022</p>
+
+            <div>
+              <h3>University Lecturer</h3>
+              <p class="institution">Ahfad University for Women, Sudan</p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2016—2018</p>
+
+            <div>
+              <h3>MSc in Genetics and Molecular Biology</h3>
+              <p class="institution">University of Khartoum, Sudan</p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2008—2013</p>
+
+            <div>
+              <h3>BSc in Zoology</h3>
+              <p class="institution">University of Khartoum, Sudan</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section-block">
+        <div class="section-heading">
+          <p>Selected work</p>
+          <h2>Publications &amp; manuscripts</h2>
+        </div>
+
+        <div class="work-list">
+          <article>
+            <p class="year">2026</p>
+
+            <div>
+              <h3>
+                Age-Dependent Effects of Social Isolation on Anxiety, Social
+                Behavior, and Neural Substrates in Zebrafish
+              </h3>
+
+              <p>Safaa Mamoun et al. — manuscript in preparation</p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2023</p>
+
+            <div>
+              <h3>
+                <a
+                  href="https://doi.org/10.1155/2023/7313578"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Association of COMT Val158Met Polymorphism with Fibromyalgia
+                  in Khartoum State, Sudan ↗
+                </a>
+              </h3>
+
+              <p>
+                Safaa Mamoun Abdelmageid et al. — Pain Research and Management
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2020</p>
+
+            <div>
+              <h3>
+                <a
+                  href="https://doi.org/10.1101/2020.07.05.188623"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Novel Algorithms for PFGE Bacterial Typing: Linking PFGE to
+                  WGS Results and Computer Simulations ↗
+                </a>
+              </h3>
+
+              <p>
+                Ibrahim-Elkhalil Abdulrazig et al. — bioRxiv preprint
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="presentations" class="section-block">
+        <div class="section-heading">
+          <p>Scientific exchange</p>
+          <h2>Presentations</h2>
+        </div>
+
+        <div class="work-list compact-list">
+          <article>
+            <p class="year">2026</p>
+
+            <div>
+              <h3>FENS Forum, Barcelona</h3>
+              <p>
+                Poster — Age-Dependent Effects of Social Isolation on Anxiety,
+                Social Behavior, and Neural Substrates in Zebrafish
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2026</p>
+
+            <div>
+              <h3>INCTN + TEX Meeting, SISSA</h3>
+              <p>Poster — Computational and systems neuroscience</p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2025</p>
+
+            <div>
+              <h3>TYAN-SISSA Workshop, Trieste</h3>
+              <p>Oral presentation — Emerging Themes in Neuroscience</p>
+            </div>
+          </article>
+
+          <article>
+            <p class="year">2018</p>
+
+            <div>
+              <h3>Genomics and Human Health in Africa</h3>
+              <p>Oral presentation — Young Scientist Conference</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="training" class="section-block">
+        <div class="section-heading">
+          <p>Methods</p>
+          <h2>Training &amp; skills</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="training-list">
+            <div>
+              <span>2025</span>
+              <p>
+                Machine Learning and Mathematics for Machine Learning
+                specializations, Coursera
+              </p>
+            </div>
+
+            <div>
+              <span>2024</span>
+              <p>
+                Cajal Advanced Computational Neuroscience Summer School, Lisbon
+              </p>
+            </div>
+
+            <div>
+              <span>2023</span>
+              <p>Cajal Experimental Neuroscience Bootcamp, SISSA</p>
+            </div>
+
+            <div>
+              <span>2018</span>
+              <p>Human Brain and EEG Workshop, Sapien Labs</p>
+            </div>
+
+            <div>
+              <span>2017</span>
+              <p>Introduction to Bioinformatics, H3ABioNet</p>
+            </div>
+          </div>
+
+          <div class="skill-tags" aria-label="Skills">
+            <span>Python</span>
+            <span>R</span>
+            <span>DeepLabCut</span>
+            <span>Keypoint-MoSeq</span>
+            <span>Machine learning</span>
+            <span>Markov models</span>
+            <span>Factor analysis</span>
+            <span>Calcium imaging</span>
+            <span>Immunofluorescence</span>
+            <span>Confocal microscopy</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="beyond" class="beyond section-block">
+        <div class="section-heading">
+          <p>Outside research</p>
+          <h2>Beyond the lab</h2>
+        </div>
+
+        <div class="beyond-grid">
+          <div class="beyond-gallery">
+            <figure class="beyond-figure">
+              <img
+                class="beyond-image"
+                src="assets/Bike.jpg"
+                alt="Cycling along a mountain trail"
+                loading="lazy"
+              >
+              <figcaption>Cycling</figcaption>
+            </figure>
+
+            <figure class="beyond-figure">
+              <img
+                class="beyond-image"
+                src="assets/Hike.jpg"
+                alt="Hiking outdoors"
+                loading="lazy"
+              >
+              <figcaption>Hiking</figcaption>
+            </figure>
+          </div>
+
+          <div class="beyond-copy">
+            <p>
+              In my free time, I enjoy cycling and hiking. Spending time
+              outdoors helps me reset and return to my work with a clearer
+              perspective.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="writing" class="essay-teaser section-block">
+        <div class="section-heading">
+          <p>Writing</p>
+          <h2>Learning in public</h2>
+        </div>
+
+        <article>
+          <p class="essay-label">Essay · 10 min read</p>
+
+          <h3>How I Learned Computational Neuroscience</h3>
+
+          <p>
+            A biologist’s route into mathematics, programming, machine
+            learning, and models of neural systems — and the resources that
+            made the transition possible.
+          </p>
+
+          <a class="essay-link" href="essay/">
+            Read the essay ↗
+          </a>
+        </article>
+      </section>
+
+      <section id="contact" class="contact section-block">
+        <p class="kicker">Let’s connect</p>
+
+        <h2>Interested in behaviour, brains, and better models?</h2>
+
+        <p>
+          I’m open to research collaborations and postdoctoral opportunities
+          in behavioural and computational neuroscience.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:sabdelma@sissa.it">
+            sabdelma@sissa.it ↗
+          </a>
+
+          <a
+            href="https://github.com/Safaa997"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/Safaa997 ↗
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
