@@ -1,0 +1,24 @@
+<p>
+  Conventional behavioral measures provide valuable insights into an animal’s
+  internal state. However, in the era of machine learning and computational
+  modelling, behavioral recording is a valuable non-invasive method that can
+  reveal many hidden gems. A
+  <a href="https://www.science.org/doi/10.1126/science.aea9795">recent</a>
+  study used the African turquoise killifish as an animal model to study aging,
+  taking advantage of its short median lifespan of 4–8 months.
+</p>
+
+<p>
+  The researchers recorded the animals from adolescence until death and used a
+  Gaussian hidden Markov model (GHMM) to divide their behavior into short,
+  recurring movement patterns called “syllables.” They found that young and
+  aged animals largely shared the same behavioral repertoire, but differed
+  in how they used these syllables.
+</p>
+
+<p>
+  Moreover, they trained a machine learning classifier on behavioral patterns
+  from young animals to predict whether they would have short or long lifespans,
+  achieving over 70% accuracy. This means that an animal’s present behavior
+  can carry information about its future life trajectory!
+</p>
